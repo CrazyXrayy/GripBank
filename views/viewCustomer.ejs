@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+</head>
+<body>
+    <div class="accountHolder">
+        <h2>Account Holders</h2>
+    
+        <% if (accounts.length > 0) { %>
+          <% accounts.forEach(account => { %>
+            <h3 class="title"><%= account.name %></h3>
+            <p class="snippet"><%= account.accountNo %></p>
+            <p><%= account.balance%></p>
+          <% }) %>
+        <% } else { %>
+          <p>There is no transfer history to display...</p>
+        <% } %>
+        
+      </div>
+</body>
+</html>

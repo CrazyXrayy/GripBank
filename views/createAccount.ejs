@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Account</title>
+</head>
+<body>
+    <div class="create-account content">
+        <form action="/createAccount" method="POST">
+          <label for="name">Name of the Account Holder:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="accountNo">Account Number:</label>
+          <input type="number" id="accountNo" name="accountNo" required>
+          <label for="balance">Initial balance:</label>
+          <input type="number" id="balance" name="balance" required>
+          <button>Submit</button>
+        </form>
+      </div>
+</body>
+</html>
